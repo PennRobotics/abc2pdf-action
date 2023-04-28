@@ -68,4 +68,4 @@ K: F
 
 ## Notes
 
-The output of _abc2svg_ is about twice as large as _abcm2ps_ for a single tune (173%). This size difference narrows to nearly the same size for three tunes (105%). This probably has to do with individual font differences as well as missing glyphs, such as the time signature icons&mdash;present in _abc2svg_ but not _abcm2ps_.
+The output size of _abc2svg_ is about twice as large as _abcm2ps_ for a single tune (173%). This size difference narrows to nearly the same size for three tunes (105%). This probably has to do with individual font differences as well as missing glyphs, such as the time signature icons&mdash;present in _abc2svg_ but not _abcm2ps_.
