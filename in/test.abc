@@ -1,4 +1,4 @@
-%%abc-include format/test.abc
+%%abc-include ../format/test.abc
 
 X: 1
 T: Good King Wenceslas
