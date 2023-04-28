@@ -23,9 +23,9 @@ jobs:
 
       - run: |
           pushd converter
-          for abcfile in in/*.abc; do \
-              [ -e "out/`basename $abcfile .abc`.pdf" ] && continue; \
-              ./abctopdf $abcfile -o "out/`basename $abcfile .abc`.pdf"; \
+          for abcfile in ../in/*.abc; do \
+              [ -e "../out/`basename $abcfile .abc`.pdf" ] && continue; \
+              ./abctopdf $abcfile -o "../out/`basename $abcfile .abc`.pdf"; \
           done
           popd
 
