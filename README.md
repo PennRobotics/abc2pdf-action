@@ -10,7 +10,11 @@ _[Github Action for Engraving Sheet Music from ABC](https://github.com/marketpla
 ## TODO
 
 - [X] `Error: PennRobotics/abc2pdf-action/first-nonworking-draft/action.yml (Line: 18, Col: 7): Required property is missing: shell`
-- [ ] `converter/abctopdf: could not find a javascript interpreter - abort`
+- [X] `converter/abctopdf: could not find a javascript interpreter - abort`
+- [ ] `Could not open file: default.abc` \
+      `Could not open file: format/test.abc` \
+      `Could not open file: ../in/format/test.abc` \
+      `../in/multisong-test.abc Error: Cannot read file 'format/test.abc'`
 - [ ] Fix any blockers in the [Eventual quick start](#eventual-quick-start) and delete the other two quick start sections
 
 
