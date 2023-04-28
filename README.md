@@ -11,11 +11,15 @@ _[Github Action for Engraving Sheet Music from ABC](https://github.com/marketpla
 
 - [X] `Error: PennRobotics/abc2pdf-action/first-nonworking-draft/action.yml (Line: 18, Col: 7): Required property is missing: shell`
 - [X] `converter/abctopdf: could not find a javascript interpreter - abort`
-- [ ] `Could not open file: default.abc` \
+- [X] `Could not open file: default.abc` \
       `Could not open file: format/test.abc` \
       `Could not open file: ../in/format/test.abc` \
       `../in/multisong-test.abc Error: Cannot read file 'format/test.abc'`
+- [ ] On last run (after fixing relative directories) the scale of the music is significantly larger than before, and \
+      the **default.abc** error is still present. Figure out whether **format/test.abc** is being called and \
+      how the defaults are different from what exists in the format file.
 - [ ] Fix any blockers in the [Eventual quick start](#eventual-quick-start) and delete the other two quick start sections
+- [ ] If we're already using JavaScript, might as well try _abcjs_
 
 
 ## Quick start
@@ -60,3 +64,8 @@ K: F
    cBAG | AG F2 | DCDE | F2 F2 |
    CCDE | FF G2 | cBAG | F2 B2 | F4 ||
 ```
+
+
+## Notes
+
+The output of _abc2svg_ is about twice as large as _abcm2ps_ for a single tune (173%). This size difference narrows to nearly the same size for three tunes (105%).
