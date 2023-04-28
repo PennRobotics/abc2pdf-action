@@ -15,7 +15,7 @@ jobs:
         with:
           packages: libjavascriptcoregtk-4.0-bin weasyprint
 
-      - run: where jsc
+      - run: which jsc
       - run: pwd
 
       - run: |
